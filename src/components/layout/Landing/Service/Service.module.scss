@@ -1,0 +1,104 @@
+@import '../../../../sass/main';
+
+.container{
+
+  margin: 10rem auto 20rem;
+  display:grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit,30rem);
+  grid-gap:5rem;
+  justify-items:center;
+  line-height: 1.8;
+
+}
+
+.card{
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  padding:2rem;
+  box-shadow: 0 10px 30px -4px rgba(0,0,0,.15);
+
+  &:hover &__icon{
+    color:$color-secondary;
+    background-color: $color-primary;
+  }
+
+  &:hover &__bottom-icon{
+    color:$color-white;
+    background-color: $color-primary;
+    transform: translate(-50%,50%);
+    opacity:1;
+  }
+
+  &__icon,
+  &__bottom-icon{
+
+      display:flex;
+      background-color: rgba(0, 0, 0, 0.05);
+      justify-content: center;
+      align-items: center;
+      border-radius:50%;
+      height:10rem;
+      width:10rem;
+      font-size:1.5rem;
+      color:#4d4d4d;
+      transition:all 0.2s ease;
+      margin-bottom: 2rem;
+
+  }
+
+  &__bottom-icon{
+    position:absolute;
+    height:5rem;
+    width:5rem;
+    margin-bottom: 0;
+    bottom:0;
+    left:50%;
+    opacity:0;
+    transform: translate(-50%,100%);
+  }
+
+  &__content{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width:inherit;
+
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__title{
+    color:$color-title;
+    font-size:1.8rem;
+    margin-bottom:1.5rem;
+  }
+
+  &__paragraph{
+    color:$color-content;
+    font-size:1.6rem;
+  }
+
+}
+
+.service{
+    transform: translateY(-2rem);
+  &__heading{
+    font-size:1.6rem;
+    color:$color-primary;
+  }
+
+  &__title{
+    color: $color-title;
+    font-size:3rem;
+    margin-bottom:2rem;
+  }
+
+  &__content{
+    color:$color-content;
+    font-size:1.6rem;
+  }
+}

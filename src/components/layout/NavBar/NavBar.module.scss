@@ -1,0 +1,73 @@
+@import '../../../sass/main';
+
+.container{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-primary;
+  height:7.5rem;
+}
+.nav{
+  // &__brand{
+  //   display:flex;
+  //   align-items: center;
+  // }
+  &__items{
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+    height:100%;
+  }
+
+  &__item{
+    position:relative;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'poppins semi bold';
+    color:$color-white;
+    padding:0 2rem;
+    text-decoration:none;
+    letter-spacing: 2px;
+    transition:all 0.2s ease;
+
+    &::before{
+      content:'';
+      position:absolute;
+      width:0;
+      height:2.5px;
+      left:0;
+      bottom:0;
+      background-color:$color-secondary;
+      transition: all 0.2s ease;
+    }
+
+    &:hover{
+      color:$color-secondary;
+
+      &::before{
+        width:100%;
+      }
+    }
+  }
+}
+
+.active{
+  color:$color-secondary;
+}
+
+.logo{
+  width:6.5rem;
+  height:6rem;
+  margin-right:2rem;
+}
+
+.logo-text{
+  width:11.7rem;
+  height:3.6rem;
+  margin-right:3rem;
+}

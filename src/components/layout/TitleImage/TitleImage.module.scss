@@ -1,0 +1,48 @@
+@import '../../../sass/main';
+
+.landing{
+  height:60vh;
+  position:relative;
+  display:grid;
+  grid-template-columns: 20% minmax(min-content,max-content) 1fr;
+  grid-auto-rows: min-content;
+  align-content: center;
+
+
+  &::before{
+    background-image:
+    url('../../../assets/imgs/landing/landing3.jpg');
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter:brightness(0.5);
+    z-index: -1;
+    }
+  }
+
+.small-title{
+  grid-column: 2 / 3;
+  color:$color-secondary;
+  font-size: 1.5rem;
+  align-self: end;
+}
+
+
+
+.large-title{
+  grid-column: 2 / 3 ;
+  color:#fff;
+  font-size: 6rem;
+}
+
+.medium-title{
+  grid-column: 2 / 3;
+  color:rgba(255,255,255,.8);
+  font-size: 2rem;
+}

@@ -1,0 +1,43 @@
+@import '../../../../sass/main';
+
+.container{
+  background-color:$color-primary;
+  padding:2rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.form{
+  height:100%;
+  display:flex;
+}
+.title{
+  margin-right:5rem;
+  color:white;
+  font-size:2.4rem;
+}
+
+.input,
+.button{
+  border:none;
+  outline:none;
+  font-size: 1.6rem;
+    font-family: inherit;
+}
+
+
+.input{
+  color:rgba(0,0,0,.7);
+  width:20rem;
+  border-radius:5px 0 0 5px;
+  padding:1.5rem 1rem;
+}
+
+.button{
+  border-radius:0 5px 5px 0;
+  padding:1rem;
+  cursor:pointer;
+  background-color:#396c1b;
+  color:white;
+}

@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Fragment} from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import classes from './App.module.scss';
+import NavBar from './components/layout/NavBar/NavBar';
+import HeadTitle from './components/layout/HeadTitle/HeadTitle';
+import Landing from './components/layout/Landing/Landing';
+import Footer from './components/layout/Footer/Footer';
 
-function App() {
+//redux
+import store from './store';
+import { Provider } from 'react-redux';
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <Provider store={store}>
+    <Fragment>
+    <Router>
+      <HeadTitle/>
+      <NavBar/>
+      <main className={classes['main']}>
+        <Route exact path='/' component={Landing}/>
+      </main>
+    </Router>
+    <Footer/>
+  </Fragment>
+</Provider>);
 }
 
 export default App;

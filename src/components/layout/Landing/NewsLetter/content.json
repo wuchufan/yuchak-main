@@ -1,0 +1,14 @@
+{
+  "en":{
+    "title":"Subscribe to our NewsLetter",
+    "button":"Subscribe",
+    "placeholder":"Enter email address"
+
+  },
+  "cn":{
+    "title":"通过邮箱咨询关注我们",
+    "button":"点击关注",
+    "placeholder":"邮箱地址"
+
+  }
+}

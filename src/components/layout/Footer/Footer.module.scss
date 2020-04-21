@@ -1,0 +1,43 @@
+@import '../../../sass/main';
+
+.container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,47rem);
+  background-color: #252525;
+  justify-content: center;
+  justify-items: center;
+  color:white;
+  padding:5rem 0 3rem;
+  grid-gap:4rem;
+}
+
+.brand{
+  &__title{
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    font-family: 'poppins bold';
+  }
+}
+
+
+.address,
+.contact{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  &__header{
+    color:$color-primary;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__content{
+    font-size:1.6rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.copyright{
+  grid-column:  1 / -1;
+  font-size:1.6rem;
+}
