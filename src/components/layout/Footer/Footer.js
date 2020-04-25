@@ -3,7 +3,7 @@ import classes from './Footer.module.scss';
 // import logo from '../../../assets/imgs/logo/logo.png';
 // import logoText from '../../../assets/imgs/logo/logo-text.png'
 
-const Footer = ({}) => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (<footer className={classes['container']}>

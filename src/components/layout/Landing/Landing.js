@@ -9,7 +9,7 @@ const Landing = () => {
 
   return (
     <Fragment>
-    <TitleImage route='landing'/>
+    <TitleImage showTitle3={true} route='landing'/>
     <Service/>
     <AboutUs/>
     <NewsLetter/>

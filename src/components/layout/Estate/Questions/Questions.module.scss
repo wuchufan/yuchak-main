@@ -1,0 +1,21 @@
+@import '../../../../sass/main';
+.container{
+  width:$max-width;
+  margin: 0 auto 15rem;
+}
+.date{
+  color:$color-content;
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+.title{
+  color:$color-primary;
+  font-size:1.6rem;
+  margin-bottom: .5rem;
+}
+.content{
+  color:$color-title;
+  font-size:1.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 2rem;
+}

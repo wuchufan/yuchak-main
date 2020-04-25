@@ -1,0 +1,86 @@
+@import '../../../../sass/main';
+
+
+.container {
+
+  max-width: $max-width;
+  margin:20rem auto;
+}
+.carousel-small-title{
+  font-size:1.6rem;
+  color:$color-primary;
+  text-align: center;
+}
+.carousel-title{
+  font-size: 3rem;
+  color:$color-title;
+  margin-bottom: 3rem;
+  text-align: center;
+  letter-spacing: .5rem;
+
+}
+.slider{
+  height:40rem;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  display:flex;
+  justify-content: flex-end;
+
+  &__content{
+    display:flex;
+    width:35%;
+    height:100%;
+    background-color:rgba(white,0.8);
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding:3rem 5rem;
+    color:$color-title;
+
+    & h1,
+    & hr{
+      margin-bottom:2.5rem;
+    }
+  }
+
+  &__title{
+    font-size:2.8rem;
+    color:$color-title;
+  }
+
+  &__paragraph{
+    font-size:1.4rem;
+    line-height: 1.5;
+    color:#0E2E47;
+
+  }
+
+  &--orlando-1{
+      background-image:url('../../../../assets/imgs/estate/carousel-orlando-1.jpg');
+  }
+
+  &--orlando-2{
+    background-image:url('../../../../assets/imgs/estate/carousel-orlando-2.jpg');
+  }
+
+  &--orlando-3{
+    background-image:url('../../../../assets/imgs/estate/carousel-orlando-3.jpg');
+  }
+
+  &--miami-1{
+        background-image:url('../../../../assets/imgs/estate/carousel-miami-1.jpg');
+  }
+
+  &--miami-2{
+        background-image:url('../../../../assets/imgs/estate/carousel-miami-2.jpg');
+  }
+
+  &--miami-3{
+        background-image:url('../../../../assets/imgs/estate/carousel-miami-3.jpg');
+  }
+
+  &--miami-4{
+        background-image:url('../../../../assets/imgs/estate/carousel-miami-4.jpg');
+  }
+}

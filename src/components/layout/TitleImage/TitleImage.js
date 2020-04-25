@@ -9,7 +9,8 @@ const TitleImage = ({
   language:{
   language
   },
-  route
+  route,
+  showTitle3
 }) => {
 
   //titles
@@ -29,7 +30,7 @@ const TitleImage = ({
             {title2}
           </h1>
         <h2 className={classes['medium-title']}>
-          {title3}
+          {showTitle3 && title3}
         </h2>
     </div>
   );
@@ -38,7 +39,8 @@ const TitleImage = ({
 
 
 TitleImage.propTypes = {
-  route:PropTypes.string.isRequired
+  route:PropTypes.string.isRequired,
+  showTitle3:PropTypes.bool.isRequired
 };
 
 

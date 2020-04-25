@@ -4,6 +4,8 @@ import classes from './App.module.scss';
 import NavBar from './components/layout/NavBar/NavBar';
 import HeadTitle from './components/layout/HeadTitle/HeadTitle';
 import Landing from './components/layout/Landing/Landing';
+import Estate from './components/layout/Estate/Estate';
+import StartUp from './components/layout/StartUp/StartUp';
 import Footer from './components/layout/Footer/Footer';
 
 //redux
@@ -20,6 +22,8 @@ const App = () => {
       <NavBar/>
       <main className={classes['main']}>
         <Route exact path='/' component={Landing}/>
+        <Route exact path='/estate' component={Estate}/>
+        <Route exact path='/startup' component={StartUp}/>
       </main>
     </Router>
     <Footer/>
