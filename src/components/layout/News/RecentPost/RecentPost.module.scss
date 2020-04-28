@@ -1,0 +1,29 @@
+@import '../../../../sass/main';
+
+.container{
+  display:flex;
+  flex-direction:column;
+  margin-bottom: 3rem;
+
+
+
+  &__title{
+    font-size: 1.9rem;
+    color:$color-title;
+
+    &:hover{
+      color:$color-primary;
+      text-decoration: underline;
+    }
+  }
+
+  &__date{
+    font-size: 1.2rem;
+    color:$color-content;
+  }
+
+  &__img{
+    width:100%;
+    margin-bottom: .5rem;
+  }
+}

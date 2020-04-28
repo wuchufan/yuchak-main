@@ -12,3 +12,8 @@
   font-family:'poppins semi bold';
   src: local('Poppins-SemiBold'),url(./assets/fonts/poppins/Poppins-SemiBold.ttf) format('truetype');
 }
+
+@font-face {
+  font-family:'poppins light';
+  src: local('Poppins-Light'),url(./assets/fonts/poppins/Poppins-Light.ttf) format('truetype');
+}

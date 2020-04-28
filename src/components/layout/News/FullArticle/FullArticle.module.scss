@@ -1,0 +1,52 @@
+@import '../../../../sass/main';
+
+$article-margin-bottom:2rem;
+
+.section-full-article {
+  padding: 10rem 0;
+  display:flex;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 67rem 25rem;
+  grid-template-areas: 'article sidebar';
+  justify-content: center;
+  grid-column-gap: 5rem;
+  box-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.15);
+  padding: 4rem;
+}
+
+.article {
+  grid-area: article;
+  grid-row-gap: 4rem;
+
+  & *{
+      margin-bottom: $article-margin-bottom;
+  }
+
+  &__title{
+    font-size: $articl-title-font;
+    color:$color-title;
+
+  }
+
+
+  &__image{
+    width:100%;
+    display:block;
+  }
+
+  &__date{
+    font-size: $article-paragraph-font;
+    color:$color-content;
+  }
+
+  &__paragraph{
+    font-size: $article-paragraph-font;
+    color:$color-title;
+  }
+
+
+}

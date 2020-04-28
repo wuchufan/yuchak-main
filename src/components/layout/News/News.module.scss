@@ -1,0 +1,19 @@
+@import '../../../sass/main';
+
+.container{
+  display:grid;
+  grid-template-columns: 67rem 25rem;
+  grid-template-areas:
+  'articles sidebar';
+  justify-content: center;
+  padding:10rem 0;
+  grid-column-gap: 5rem;
+
+}
+
+.articles{
+  display: grid;
+  grid-area:articles;
+  grid-row-gap:4rem;
+
+}

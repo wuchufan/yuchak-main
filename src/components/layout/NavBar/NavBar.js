@@ -42,7 +42,7 @@ const NavBar = ({language:{
         <NavLink exact={true} to='/startup' className={classes['nav__item']} activeClassName={classes['active']}>
           {n5}
         </NavLink>
-        <NavLink exact={true} to='/news' className={classes['nav__item']} activeClassName={classes['active']}>
+        <NavLink to='/news' className={classes['nav__item']} activeClassName={classes['active']}>
           {n6}
         </NavLink>
       </ul>

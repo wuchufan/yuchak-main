@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Carousel = () => {
   const settings = {
     dots: true,
-    // autoplay:true,
+    autoplay:true,
     arrows:false
   }
   const hrStyle={

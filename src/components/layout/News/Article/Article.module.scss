@@ -1,0 +1,61 @@
+@import '../../../../sass/main';
+
+.container{
+  box-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.15);
+
+
+  &__text{
+    display:flex;
+    flex-direction:column;
+    padding:2rem;
+
+  }
+}
+
+.title{
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom:1rem;
+  text-decoration: none;
+  color:$color-title;
+  transition:all 0.2s ease;
+
+
+  &:hover{
+    color:$color-primary;
+    text-decoration: underline;
+  }
+}
+.date{
+  font-size:1.4rem;
+  margin-bottom:1rem;
+  color:$color-content;
+}
+.content{
+  font-size: 1.6rem;
+
+}
+.img{
+  width:100%;
+}
+
+.button{
+  align-self: center;
+  font-family: $font-primary;
+  margin-top:2rem;
+  & a{
+    display:inline-block;
+    padding:.5rem 2rem;
+    background-color:$color-primary;
+    border:1px solid transparent;
+    font-size:1.6rem;
+    text-decoration:none;
+    color:white;
+    transition:all 0.2s ease;
+    &:hover{
+      background-color: transparent;
+      border:1px solid $color-primary;
+      color:$color-primary;
+    }
+  }
+}
