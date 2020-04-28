@@ -67,6 +67,7 @@ $grid-columns:0.7fr 1fr;
   display:flex;
   align-items: center;
   margin-bottom: -5rem;
+  width:max-content;
   &--2{
     transform: translateX(-5rem);
   }
