@@ -1,9 +1,7 @@
 import React, {Fragment} from 'react';
-import {Link} from 'react-router-dom';
 import Article from './Article/Article';
 import classes from './News.module.scss';
 import TitleImage from '../TitleImage/TitleImage';
-import RecentPost from './RecentPost/RecentPost';
 import content from './content.json';
 import articleImages from './imgs';
 import SideBar from './SideBar/SideBar';
@@ -20,7 +18,7 @@ const News = () => {
         {
           articles.map((article, i) => {
             if (!articleImages[i])
-              return
+              return null;
             return <Article images={articleImages[i]} articleInfo={article} key={i}/>
           })
         }

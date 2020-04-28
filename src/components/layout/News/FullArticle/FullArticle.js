@@ -32,7 +32,7 @@ const FullArticle = ({
           {paragraphs.map((paragraph,index)=>{
             if(paragraph === 'img') {
 
-              return <img className={classes['article__image']}  key={`img${index}`} alt='article-image' src={imgs[indexOfArticle][imgIndex++]}/>;
+              return <img className={classes['article__image']}  key={`img${index}`} alt='' src={imgs[indexOfArticle][imgIndex++]}/>;
             }
             return <p className={classes['article__paragraph']} key={index}>{paragraph}</p>
           })}
