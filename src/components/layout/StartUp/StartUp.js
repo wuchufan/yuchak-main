@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import classes from './StartUp.module.scss';
+import landing from '../../../assets/imgs/startup/startup-landing.jpg';
 import icon1 from '../../../assets/imgs/startup/startup-icons-1.jpg';
 import icon2 from '../../../assets/imgs/startup/startup-icons-2.jpg';
 import icon3 from '../../../assets/imgs/startup/startup-icons-3.jpg';
@@ -21,7 +22,9 @@ const StartUp = () => {
           量身订造创业计划
         </h3>
       </div>
-      <div className={classes['landing__img']}></div>
+      <div className={classes['landing__img']}>
+        <img style={{objectFit:'cover'}} loading='lazy' height='100%' width='100%' src={landing}/>
+      </div>
 
     </section>
     <section className={classes['six-steps']}>
