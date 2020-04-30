@@ -20,7 +20,7 @@ const App = () => {
   return (
   <Provider store={store}>
     <Fragment>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <ScrollToTop/>
       <HeadTitle/>
       <NavBar/>
