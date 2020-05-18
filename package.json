@@ -23,7 +23,7 @@
     "redux": "^4.0.5",
     "slick-carousel": "^1.8.1"
   },
-  "homepage": "https://wuchufan.github.io/yuchak-main",
+  "homepage": "www.yuchakcorp.com",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

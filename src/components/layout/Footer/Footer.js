@@ -8,11 +8,7 @@ const Footer = () => {
 
   return (<footer className={classes['container']}>
     <div className={classes['brand']}>
-      {/* <img style={{
-            marginRight:'2rem'
-          }} loading='lazy' height='60' alt='logo' src={logo}/>
-          <img loading='lazy' height='50' alt='logo-text' src={logoText}/> */
-      }
+
       <h1 className={classes['brand__title']}>Yuchak
         <span style={{
             color: '#4e9525'
