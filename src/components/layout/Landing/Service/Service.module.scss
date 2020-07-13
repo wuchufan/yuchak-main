@@ -10,9 +10,25 @@
   justify-items:center;
   line-height: 1.8;
 
+
+  @include respond(laptop){
+    grid-template-columns:repeat(2,30rem);
+    margin-bottom:5rem;
+  }
+
+  @include respond(tablet){
+    grid-row-gap:10rem;
+    margin-bottom:5rem;
+  }
+
+  @include respond(mobileL){
+    grid-template-columns: repeat(auto-fit,30rem);
+  }
+
 }
 
 .card{
+
   position:relative;
   display:flex;
   flex-direction: column;
@@ -20,6 +36,7 @@
   width:100%;
   padding:2rem;
   box-shadow: 0 10px 30px -4px rgba(0,0,0,.15);
+
 
   &:hover &__icon{
     color:$color-secondary;
@@ -85,7 +102,23 @@
 }
 
 .service{
-    transform: translateY(-2rem);
+  transform: translateY(-2rem);
+  @include respond(laptop){
+    text-align: center;
+    grid-column: span 2;
+    grid-row:1 / 2;
+  }
+
+  @include respond(tablet){
+    grid-column: span 2;
+    grid-row:1 / 2;
+    text-align: center;
+  }
+  @include respond(mobileL){
+    grid-column: auto;
+
+  }
+
   &__heading{
     font-size:1.6rem;
     color:$color-primary;

@@ -1,23 +1,46 @@
 @import '../../../sass/main';
 
-.container{
+.nav{
   width:100%;
   display:flex;
   justify-content: center;
   align-items: center;
   background-color: $color-primary;
   height:7.5rem;
-}
-.nav{
-  // &__brand{
-  //   display:flex;
-  //   align-items: center;
-  // }
+  @include respond(mobileL){
+    height:auto;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #000000;
+  }
+
+  &__toggle-button{
+    display:none;
+    width:100%;
+    @include respond(mobileL){
+      display: block;
+
+    }
+  }
+
   &__items{
     display:flex;
     justify-content: center;
     align-items: stretch;
     height:100%;
+    @include respond(mobileL){
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding:0 2rem;
+      width:100%;
+      height:0;
+      overflow:hidden;
+      transition:all 0.15s ease;
+
+    }
+
   }
 
   &__item{
@@ -35,6 +58,19 @@
     letter-spacing: 2px;
     transition:all 0.2s ease;
 
+    @include respond(tablet){
+      font-size:1.3rem;
+    }
+
+    @include respond(mobileL){
+      display:flex;
+      padding:1rem 0;
+      font-size: 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      width:100%;
+      justify-content: flex-start;
+    }
+
     &::before{
       content:'';
       position:absolute;
@@ -44,11 +80,15 @@
       bottom:0;
       background-color:$color-secondary;
       transition: all 0.2s ease;
+
+      @include respond(mobileL){
+        background-color:inherit;
+      }
+
     }
 
     &:hover{
       color:$color-secondary;
-
       &::before{
         width:100%;
       }
@@ -58,6 +98,7 @@
 
 .active{
   color:$color-secondary;
+
 }
 
 .logo{
@@ -70,4 +111,10 @@
   width:11.7rem;
   height:3.6rem;
   margin-right:3rem;
+}
+
+.show-nav{
+  @include respond(mobileL){
+    height:30rem;
+  }
 }

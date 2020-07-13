@@ -7,6 +7,29 @@
 
 
 html{
-  font-size:62.5%;
-  font-family: $font-primary
+  font-size:62.5%; //1rem = 10px
+  font-family: $font-primary;
+
+  @include respond(laptopL){
+    font-size:62.5%;
+  }
+
+  @include respond(laptop){
+    font-size:59.37%;
+  }
+
+  @include respond(tablet){
+    font-size:59.37%; //1rem = 9.5px
+  }
+
+  @include respond(mobileL){
+    font-size:56.25%; //1rem = 9px
+  }
+
+  @include respond(mobileM){
+    font-size:56.25%;
+  }
+  @include respond(mobileS){
+    font-size:56.25%;
+  }
 }

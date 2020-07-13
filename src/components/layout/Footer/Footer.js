@@ -10,7 +10,7 @@ const Footer = () => {
     <div className={classes['brand']}>
 
       <h1 className={classes['brand__title']}>Yuchak
-        <span style={{
+        <span className={classes['brand__title-span']} style={{
             color: '#4e9525'
           }}>Corporation</span>
       </h1>

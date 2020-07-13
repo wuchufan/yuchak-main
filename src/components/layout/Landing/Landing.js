@@ -12,7 +12,6 @@ const Landing = () => {
     <TitleImage showTitle3={true} route='landing'/>
     <Service/>
     <AboutUs/>
-    <NewsLetter/>
     </Fragment>
   );
 }

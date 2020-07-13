@@ -1,15 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from './NavBar.module.scss';
 import { NavLink } from 'react-router-dom';
 import content from './content.json';
 import { connect } from 'react-redux';
-// import logo from '../../../assets/imgs/logo/logo.png';
-// import logoText from '../../../assets/imgs/logo/logo-text.png';
+import MenuToggleButton from './MenuToggleButton/MenuToggleButton';
 
 const NavBar = ({language:{
   language
 }}) => {
 
+
+  const [showMenu, toggleMenu] = useState(false);
   //Navigation Bar item texts
   const {
     n1,
@@ -20,13 +21,18 @@ const NavBar = ({language:{
     n6
   } = content[language];
 
+  let navClass = classes['nav__items']
+  if(showMenu){
+    navClass = `${classes['nav__items']} ${classes['show-nav']}`
+  }
+
+
   return (
-    <nav className={classes['container']}>
-      {/* <div className={classes['nav__brand']}>
-        <img src={logo} className={classes['logo']}  alt='logo'/>
-        <img src={logoText} className={classes['logo-text']}  alt='logo-text'/>
-      </div> */}
-      <ul className={classes['nav__items']}>
+    <nav className={classes['nav']}>
+      <div className={classes['nav__toggle-button']}>
+        <MenuToggleButton toggle={toggleMenu} show={showMenu}/>
+      </div>
+      <ul className={navClass}>
         <NavLink exact={true} to='/' className={classes['nav__item']} activeClassName={classes['active']}>
           {n1}
         </NavLink>
@@ -46,6 +52,7 @@ const NavBar = ({language:{
           {n6}
         </NavLink>
       </ul>
+
     </nav>
   );
 }

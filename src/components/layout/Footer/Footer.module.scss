@@ -9,13 +9,45 @@
   color:white;
   padding:5rem 0 3rem;
   grid-gap:4rem;
+
+  @include respond(desktopL){
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  @include respond(laptopL){
+      grid-template-columns:repeat(auto-fit,47rem);
+  }
+
+  @include respond(mobileS){
+    grid-template-columns:90%;
+
+  }
 }
 
 .brand{
+  @include respond(laptopL){
+    grid-column:1 / -1;
+  }
+
+  @include respond(mobileS){
+    width:auto;
+  }
+
   &__title{
     text-transform: uppercase;
     font-size: 3.4rem;
     font-family: 'poppins bold';
+
+    &-span{
+        @include respond(mobileS){
+          display:block;
+        }
+    }
+
+    @include respond(mobileS){
+      font-size:3.0rem;
+      text-align: center;
+    }
   }
 }
 
