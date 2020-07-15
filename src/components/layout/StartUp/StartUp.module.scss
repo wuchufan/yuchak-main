@@ -13,6 +13,7 @@ $grid-columns:0.7fr 1fr;
 
   }
 
+
   &__title{
     grid-area:title;
     padding:15rem;
@@ -23,6 +24,9 @@ $grid-columns:0.7fr 1fr;
 
     @include respond(tablet){
       padding:10rem 8rem;
+    }
+    @include respond(mobileS){
+      padding:5rem 4rem;
     }
 
     & h1{
