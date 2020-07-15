@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a39b8cfc.chunk.css",
+    "main.css": "/static/css/main.ea4aed45.chunk.css",
     "main.js": "/static/js/main.ddc32144.chunk.js",
     "main.js.map": "/static/js/main.ddc32144.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.784c586e.js",
@@ -9,10 +9,10 @@
     "static/js/2.dd140b44.chunk.js": "/static/js/2.dd140b44.chunk.js",
     "static/js/2.dd140b44.chunk.js.map": "/static/js/2.dd140b44.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.20c144d6a5a42b5ba88d590e02298dc7.js": "/precache-manifest.20c144d6a5a42b5ba88d590e02298dc7.js",
+    "precache-manifest.8b8ad5c1f2cf6752e3eab7d5ccf0f7a2.js": "/precache-manifest.8b8ad5c1f2cf6752e3eab7d5ccf0f7a2.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.c60feeff.chunk.css.map": "/static/css/2.c60feeff.chunk.css.map",
-    "static/css/main.a39b8cfc.chunk.css.map": "/static/css/main.a39b8cfc.chunk.css.map",
+    "static/css/main.ea4aed45.chunk.css.map": "/static/css/main.ea4aed45.chunk.css.map",
     "static/js/2.dd140b44.chunk.js.LICENSE.txt": "/static/js/2.dd140b44.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Poppins-SemiBold.342ba3d8.ttf",
     "static/media/article20170119-1.jpg": "/static/media/article20170119-1.233b244a.jpg",
@@ -39,7 +39,7 @@
     "static/js/runtime-main.784c586e.js",
     "static/css/2.c60feeff.chunk.css",
     "static/js/2.dd140b44.chunk.js",
-    "static/css/main.a39b8cfc.chunk.css",
+    "static/css/main.ea4aed45.chunk.css",
     "static/js/main.ddc32144.chunk.js"
   ]
 }
