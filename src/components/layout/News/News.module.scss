@@ -9,6 +9,17 @@
   padding:10rem 0;
   grid-column-gap: 5rem;
 
+  @include respond(tablet){
+    grid-template-columns:80%;
+    grid-template-areas:
+    'articles'
+    'sidebar';
+    grid-row-gap:10rem;
+  }
+
+  @include respond(mobileL){
+    grid-template-columns:100%;
+  }
 }
 
 .articles{

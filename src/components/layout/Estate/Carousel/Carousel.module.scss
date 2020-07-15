@@ -38,6 +38,15 @@
     padding:3rem 5rem;
     color:$color-title;
 
+    @include respond(tablet){
+      width:50%;
+    }
+
+    @include respond(mobileL){
+      width:100%;
+        background-color:rgba(white,0.7);
+    }
+
     & h1,
     & hr{
       margin-bottom:2.5rem;

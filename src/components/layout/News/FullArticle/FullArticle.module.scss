@@ -6,6 +6,10 @@ $article-margin-bottom:2rem;
   padding: 10rem 0;
   display:flex;
   justify-content: center;
+  @include respond(mobileL){
+    padding:5rem 0;
+  }
+
 }
 
 .container {
@@ -16,6 +20,20 @@ $article-margin-bottom:2rem;
   grid-column-gap: 5rem;
   box-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.15);
   padding: 4rem;
+
+  @include respond(tablet){
+    grid-template-columns:80%;
+    grid-template-areas:
+    'article'
+    'sidebar';
+    grid-row-gap:20rem;
+
+  }
+  @include respond(mobileL){
+    padding:0;
+    grid-template-columns:100%;
+    box-shadow:none;
+  }
 }
 
 .article {

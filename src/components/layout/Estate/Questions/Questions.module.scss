@@ -1,21 +1,37 @@
 @import '../../../../sass/main';
 .container{
-  width:$max-width;
+  max-width:$max-width;
   margin: 0 auto 15rem;
+  @include respond(laptop){
+    padding:0 2rem;
+  }
 }
 .date{
   color:$color-content;
   font-size: 1.2rem;
   margin-bottom: .5rem;
+
+  @include respond(laptop){
+    font-size:1.4rem;
+  }
+
 }
 .title{
   color:$color-primary;
   font-size:1.6rem;
   margin-bottom: .5rem;
+
+  @include respond(laptop){
+    font-size:2.2rem;
+  }
 }
 .content{
   color:$color-title;
   font-size:1.2rem;
   margin-bottom: 1.5rem;
   line-height: 2rem;
+
+  @include respond(laptop){
+    font-size:1.4rem;
+  }
 }

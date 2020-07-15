@@ -4,9 +4,17 @@
   display:grid;
   max-width: $max-width;
   margin: 20rem auto;
-  grid-template-columns:repeat(auto-fit, 50rem );
+  grid-template-columns:repeat(auto-fit, 50rem);
   justify-content:center;
   grid-gap:10rem;
+
+  @include respond(mobileL){
+      grid-template-columns:repeat(auto-fit, 40rem);
+  }
+
+  @include respond(mobileS){
+    grid-template-columns:100%;
+  }
 }
 
 
@@ -22,12 +30,24 @@
   grid-gap:2rem;
   font-family:$font-primary;
   font-weight:light;
+
+  @include respond(mobileL){
+    grid-template-columns:100%;
+    grid-template-areas:
+    'title'
+    'img'
+    'content'
+    'button';
+    justify-items:center;
+  }
+
   &__image{
     grid-area:img;
     & img{
       display: block;
       height:170px;
       width:170px;
+
     }
   }
 
