@@ -1,14 +1,15 @@
 {
   "en":{
     "header":"Our Mission",
-    "paragraph":"Yuchak Corporation is a comprehensive international financial investment Services Company committed to providing high-net-worth individuals with professional global asset allocation and wealth management consulting services. We are your first choice of wealth management institution as we have strong core international investment capabilities to provide customers with the most professional matching investment options. We will continue to seize the market opportunities in the future with our outstanding strength and abundant experiences in financial services, and strengthen our core competitiveness and build a first-class international financial services brand. We also have Yuchak Immigration for immigration consulting services from licensed immigration consultants and lawyers, and Petit Ceo for online platform education.",
-    "title":"Yuchak Corporation"
-
+    "paragraph":"Yuchak Corporation is a comprehensive international financial investment Services Company committed to providing high-net-worth individuals with professional global asset allocation and wealth management consulting services. We are your first choice of wealth management institution as we have strong core international investment capabilities to provide customers with the most professional matching investment options. We will continue to seize the market opportunities in the future with our outstanding strength and abundant experiences in financial services, and strengthen our core competitiveness and build a first-class international financial services brand. We also have Petit Ceo for online platform education.",
+    "title":"Yuchak Corporation",
+    "comment":"Yuchak Immigration for immigration consulting services from licensed immigration consultants and lawyers, and"
   },
   "cn":{
     "header":"关于我们",
-    "paragraph":"宇泽集团致力于为高净值人士提供专业的全球资产配置服务和财富管理与投资咨询服务。我们具有强大投资能力、国际化能力等核心能力，为客户提供专业优秀且与其资产和需求匹配的资产类别，为客户提供财富保值增值全方位解决方案，是客户首选财富管理机构。我们将凭借在金融服务方面的卓越实力和丰富经验，继续把握未来的市场机遇，不断强化我们的核心竞争力，打造国际金融服务一流品牌！同时我们旗下还有宇泽移民由移民局特批移民顾问和律师团队共同主办为广大客户提供留学移民咨询服务，以及小总裁在线教育系统提供网络线上平台式教育。",
-    "title":"宇泽集团"
-
+    "paragraph":"宇泽集团致力于为高净值人士提供专业的全球资产配置服务和财富管理与投资咨询服务。我们具有强大投资能力、国际化能力等核心能力，为客户提供专业优秀且与其资产和需求匹配的资产类别，为客户提供财富保值增值全方位解决方案，是客户首选财富管理机构。我们将凭借在金融服务方面的卓越实力和丰富经验，继续把握未来的市场机遇，不断强化我们的核心竞争力，打造国际金融服务一流品牌！同时我们旗下还有小总裁在线教育系统提供网络线上平台式教育。",
+    "title":"宇泽集团",
+    "comment":"宇泽移民由移民局特批移民顾问和律师团队共同主办为广大客户提供留学移民咨询服务，"
+  
   }
 }
