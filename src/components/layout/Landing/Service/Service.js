@@ -22,7 +22,7 @@ const Service = ({ language:{language} }) => {
   } = content[language];
   return (
     <section className={classes['container']}>
-      <div className={classes['card']}>
+      {/* <div className={classes['card']}>
         <div className={classes['card__icon']}>
           <FontAwesomeIcon size='2x' icon={faMap}/>
         </div>
@@ -39,7 +39,7 @@ const Service = ({ language:{language} }) => {
             <FontAwesomeIcon icon={faArrowRight}/>
           </a>
         </div>
-      </div>
+      </div> */}
       <div className={classes['card']}>
         <div className={classes['card__icon']}>
           <FontAwesomeIcon size='2x' icon={faUserGraduate}/>

@@ -36,9 +36,9 @@ const NavBar = ({language:{
         <NavLink exact={true} to='/' className={classes['nav__item']} activeClassName={classes['active']}>
           {n1}
         </NavLink>
-        <a href='https://www.ycimm.com/' className={classes['nav__item']}>
+        {/* <a href='https://www.ycimm.com/' className={classes['nav__item']}>
           {n2}
-        </a>
+        </a> */}
         <a href='http://www.petitceo.com/' className={classes['nav__item']}>
           {n3}
         </a>
