@@ -23,7 +23,7 @@ const HeadTitle = ({switchToChinese, switchToEnglish}) => (
 
     </div>
     <div className={classes['title']}>
-      Yuchak<span style={{color:'#4e9525'}}>Corporation</span>
+      Yuchak<span style={{color:'#4e9525'}}>Group</span>
     </div>
     <div className={classes['language']}>
         <button style={{marginRight:'2rem'}} className={classes['language__button']} onClick={()=>switchToEnglish()}>EN</button>
